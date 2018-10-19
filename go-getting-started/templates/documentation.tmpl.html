@@ -1,0 +1,160 @@
+<html>
+{{template "header.tmpl.html"}}
+
+<body>
+  {{template "nav.tmpl.html"}}
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Grupo Coworking 5</h1>
+      <h2>Saúde</h2>
+    </div>  
+  </div>
+  <div class="container">
+    <div class="col-12">
+      <div class="input-group mb-3" data-toggle="collapse" href="#api1" role="button" aria-expanded="false" aria-controls="api1">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-success">GET</span>
+        </div>
+        <span class="form-control">
+          /collection/:name
+        </span>
+      </div>
+      <div class="collapse col-12" id="api1">
+        <h3>Pega todos os dados da collection</h3>
+        <p>Substitua o ":name" pelo nome da collection</p>
+        <br/>
+      </div>
+
+      <div class="input-group mb-3" data-toggle="collapse" href="#api2" role="button" aria-expanded="false" aria-controls="api2">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTSaveCollection
+        </span>
+      </div>
+      <div class="collapse col-12" id="api2">
+        <h3>Envie o documento da seguinte forma:</h3>
+        <div class="card card-body">
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"medicos",</span>
+          <span>&emsp;	<strong>"documento"</strong>:objeto</span>
+          <span>}</span>
+        </div>        
+        <br/>
+      </div>
+
+      <div class="input-group mb-3" data-toggle="collapse" href="#api3" role="button" aria-expanded="false" aria-controls="api3">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTgetAllNotDeletedFromCollection
+        </span>
+      </div>
+      <div class="collapse col-12" id="api3">
+        <h3>Envie o post para retornar documentos não deletados</h3>
+        <div class="card card-body">
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"medicos",</span>
+          <span>}</span>
+        </div>
+        <br/>
+      </div>
+
+      <div class="input-group mb-3" data-toggle="collapse" href="#api4" role="button" aria-expanded="false" aria-controls="api4">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTgetAllSearchFromCollection
+        </span>
+      </div>
+
+      <div class="collapse col-12" id="api4">
+        <h3>Envie o post para retornar os documentos de acordo com as condições.</h3>
+        <div class="card card-body">
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"medicos",</span>
+          <span>&emsp;	<strong>"where"</strong>:[</span>
+          <span>&emsp;&emsp;	{</span>
+          <span>&emsp;&emsp;	"var1":"Documento",</span>
+          <span>&emsp;&emsp;	"operador":"==",</span>
+          <span>&emsp;&emsp;	"var2":5</span>
+          <span>&emsp;&emsp;	}</span>
+          <span>&emsp;]</span>
+          <span>}</span>
+        </div>
+        <br/>
+      </div>
+
+
+      <div class="input-group mb-3" data-toggle="collapse" href="#api5" role="button" aria-expanded="false" aria-controls="api5">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTdeleteDocumentCollection
+        </span>
+      </div>
+      <div class="collapse col-12" id="api5">
+      <h3>Envie o post para deletar o documento.</h3>
+        <div class="card card-body">
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"medicos",</span>
+          <span>&emsp;	<strong>"id"</strong>:"IDta2DzukmqWmFVBHqU7"</span>
+          <span>}</span>
+        </div>
+        <br/>
+      </div>
+      
+    
+	
+      <div class="input-group mb-3" data-toggle="collapse" href="#api6" role="button" aria-expanded="false" aria-controls="api6">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTupdateDocumentCollection
+        </span>
+      </div>
+      <div class="collapse col-12" id="api6">
+        <h3>Envie o post para dar update no documento</h3>
+        <div class="card card-body">
+        
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"medicos",</span>
+          <span>&emsp;	<strong>"id"</strong>:"IDta2DzukmqWmFVBHqU7",</span>
+          <span>&emsp;	<strong>"documento"</strong>:objeto</span>
+          <span>}</span>
+        </div>
+        <br/>
+      </div>
+      
+      <div class="input-group mb-3" data-toggle="collapse" href="#api7" role="button" aria-expanded="false" aria-controls="api7">
+        <div class="input-group-prepend">
+          <span class="input-group-text alert-primary" id="basic-addon1">POST</span>
+        </div>
+        <span class="form-control">
+          /collection/POSTgetOneDocumentFromCollection
+        </span>
+      </div>
+      <div class="collapse col-12" id="api7">
+        <h3>Envie o post para dar update no documento</h3>
+        <div class="card card-body">
+        
+          <span>{</span>
+          <span>&emsp;	<strong>"collection"</strong>:"UBS",</span>
+          <span>&emsp;	<strong>"id"</strong>:"IDta2DzukmqWmFVBHqU7"</span>
+          <span>}</span>
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "apiName": "firebase",
+        "apiDescription": "",
+        "apiServer": "",
+        "apiUser": "",
+        "apiPassword": "",
+        "apiNumeroTentativa": 5,
+        "apiToken": ""
+    },
+    {
+        "apiName": "facebook",
+        "apiDescription": "",
+        "apiServer": "https://graph.facebook.com/v2.6/me/messages?access_token=",
+        "apiUser": "",
+        "apiPassword": "EAADyKxETqL4BAGCOKrEU92AWPUjM8gQlBPJ6p1SCWonUI8fce07dxv1SaAzNGRfBZAcvDNwUhgWZBv1I0M45h9UnQj7VSHZBCml2eSejvXpjXMLzAx2szEYHSniQzLEyQZCPSWHSEaatkyXCJfzyp1CzhZCOa9nihe5N8jDXFjNjZBgfgB2I3zxvwtmAro2dQZD",
+        "apiNumeroTentativa": 5,
+        "apiToken": ""
+    }
+]

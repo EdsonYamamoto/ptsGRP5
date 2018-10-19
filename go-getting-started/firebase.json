@@ -1,0 +1,12 @@
+{
+	"type": "service_account",
+	"project_id": "agendamed-bd98a",
+	"private_key_id": "9c0309c1179b4a5e8633527eec2d8607efc91871",
+	"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCOeow7dGoEY2J1\nWhl99prdDUpTVjz1cBCVMk4ktMR25yK5DlI+QhnMPxQoeb0oJW/A7rTw42IIvp1A\nCM/xdfz+8/dW9DtG7gHbKYfK81Y+ZtTs/oMSFDnnIwy3/EGbVLbw3BGtoSNjA3pw\n/Qrc6iqQNobaKxqgf3bKHtO2KyQhcJ7/OTN14g9sdJtzw+nNmwDcn2etklPl2ATA\nRc+mPF5Y/Ydxxi2vHw/q51DDfHAyleAGvGkpXOO11cjBxf7uyC5DVXTVUnTWWAK7\nm5BXSd8jawtab1s/WlRmJXDV0dt/S8C7EHs5w1ajZVcAtaPKdGOefqWVZBH3d2sN\nt97HTiLPAgMBAAECggEAAjRu8hvsPhLO+xOWBxHSC1oBd0ZY3XrKpDxp4tMx98ho\n4aXmlj8N83qwaatEnEKZYZ9wCQrua/CN3L1Q1ng7HjORSspZwSW9Z/JTFHbCiWcB\npC87a66zcgUOqn7gAbLZvTgdRUC+nEbOq2vxsex6ac6Q31Rrw5BlZV2nwg8V2TdF\nMngkfbR5UvJyAlAVzzizalUA7GggB1Pq0cUZRvKBHuYJJ8VDQLIg1c8U/9lRpPxH\nx+tE2Q34jwYpVIiyCpy+iydrTfjjV/HlWY+LxSUOU7bLNSUcCLcDvAXrreuHSD1a\nrdx8TIfRz22MxfhEUS4L4w/NzTlZcU5lA+Zau33BPQKBgQDCs4h8OttiTFXQViAB\ngqDFAOLa/buWnsMglmraOR6dhBN+suDXIkW3jjAbxYSpKxzfb8yfZxab3hkyucag\ndvwn4GV9kzinz+Ms7d59/3AadnQJ+xG3C18OlBm31t+6N6Evoj/FDJp8JkKkQy/o\nrw7UbAfvVz8mTSzdcawQJvBbowKBgQC7Vf76KVK7k140es2RjMX9VUHOl5gHP/F5\nARwHtyGw08fmt6NoUIH04YL2J+qG4PR0XBv6pcEZMAeM+pIM5j6WCpkvPVcaLtNr\ndcDGRfjzIzyxtMX5Oukx9CA+e/gt4CNUgLr2dNFtwf+aQA65hZNQvKjlBK38n1oU\nij22LiXO5QKBgQC23YpWK617UHjUuN9Mq9S10xQ+XEuAttJL3Bq1pSpFBRSOThFw\n3aafNLOokcX8YRq4HLgSCu+oK1x9URDmC3rfNRn9bHWs30reGvd6XZx7rj9kVGQa\nCFsaRS02hmEQ9Ei2hWvhdenuqryyrMvlfe2uw1xchhQwtBFsVuQlM31SgwKBgDJe\ng+kVNUZz8C9iGWWaGR3tT31RqzG/0pg7YSL97VQTDTuOgqQoiVijTcgLoXZUg8XJ\ngkhZStsP2+fe82f+fDNxdBCMiJ/kmTnadlOZOr986PPK7DP/z/V7czP5txf2nOk6\nl4pujGTbdXMu6Aaf0KUzpKG3KWS0H89IACG8tLO1AoGAI60W96WlQyt9q4p1Gd/m\nIM0AKihzasaoG7JeUHRcT+JWnpmWGzFTiKbXseDWxZ40YDdKS9SYR2HVW+DlhbPg\nI0JzMaXeuuP2xKk2IVB/wjCR3tDEAWW4YP9ezIl4rD2ZimygkXQbDWSyvk3P9VxD\nAW2IX3tnqpbD68ZPmEznOPk=\n-----END PRIVATE KEY-----\n",
+	"client_email": "firebase-adminsdk-3leer@agendamed-bd98a.iam.gserviceaccount.com",
+	"client_id": "117858291520136580706",
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3leer%40agendamed-bd98a.iam.gserviceaccount.com"
+}

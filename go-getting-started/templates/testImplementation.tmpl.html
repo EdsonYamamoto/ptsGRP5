@@ -1,0 +1,87 @@
+<html>
+{{template "header.tmpl.html"}}
+
+<body>
+  {{template "nav.tmpl.html"}}
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Grupo Coworking 5</h1>
+      <h2>Saúde</h2>
+    </div>  
+  </div>
+  <div class="container">
+    <div class="col-12">
+        <div class="col-12">
+          <h1>
+            Teste JSON para POST
+          </h1>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="documentoJSON">Só será armazenado uma string.</label>
+          <textarea style="resize: vertical;" class="form-control" id="documentoJSON"></textarea>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="collection">Collection</label>
+          <input class="form-control" type="text" id="collection">
+        </div>
+        <div class="float-right ">
+          <button id="BotaoPost" class="btn btn-primary">Teste de POST</button>
+        </div>
+        
+        <div id="resposta_ID">
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="col-12">
+          <h1>
+            Busca por Colecao
+          </h1>
+        </div>
+        <div class="form-group col-md-12">
+          <label for="collectionName">Nome colecao</label>
+          <input  class="form-control" type="text" id="collectionName">
+        </div>
+        <div class="form-data">
+          <div class="float-right">
+            <button id="BotaoBuscaDadosCollection" class="btn btn-primary" onclick="VisualizarCollection()">Digitar Coleção</button>
+          </div>
+        </div>
+    </div>
+  </div>
+<script>
+          $("#BotaoPost").click(function () {
+            alert(document.getElementById("collection").value + "\n" + document.getElementById("documentoJSON").value);
+            if (document.getElementById("collection").value != "" && document.getElementById("documentoJSON").value != "") {
+              $.ajax({
+                type: "POST",
+                url: "/collection/POSTSaveCollection",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data:JSON.stringify({
+                  collection: document.getElementById("collection").value,
+                  documento: document.getElementById("documentoJSON").value
+                })
+              })
+              .then(function(dados) {
+                console.log(dados);
+                document.getElementById("resposta_ID").innerHTML = dados.message;
+              })
+              senão funcionar acontece isto daqui
+              .fail(function(err) {
+                console.error('Oh não!!', err);
+                document.getElementById("resposta_ID").innerHTML = dados.message;
+              });
+            }
+          });
+        </script>
+        <script>
+            function VisualizarCollection() {
+              if (document.getElementById("collectionName").value != "") {
+                window.open("/collection/" + document.getElementById("collectionName").value)
+              }
+            }
+          </script>
+</body>
+
+</html>
